@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, :root { height: 100%; }
+body { @apply bg-slate-950 text-slate-100; background-image: theme('backgroundImage.mesh'); }
+
+.card { @apply bg-slate-900/70 backdrop-blur-xl rounded-3xl border border-slate-800 shadow-soft; }
+.btn { @apply inline-flex items-center justify-center gap-2 rounded-2xl px-4 py-2 font-semibold bg-slate-800/90 border border-slate-700 hover:bg-slate-700 transition; }
+.btn-primary { @apply inline-flex items-center gap-2 rounded-2xl px-5 py-2.5 font-semibold bg-gradient-to-r from-blue-500 to-emerald-400 text-slate-900 shadow-glow; }
+.badge { @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-medium bg-slate-800/80 border border-slate-700; }
+.input { @apply px-3 py-2 rounded-2xl bg-slate-900/70 border border-slate-700 focus:outline-none; }
+.select { @apply px-3 py-2 rounded-2xl bg-slate-900/70 border border-slate-700; }
+.table { @apply w-full text-sm; }
+.th { @apply text-left p-3 bg-slate-900/60 text-slate-400; }
+.td { @apply p-3 border-t border-slate-800; }
+.pill { @apply px-2 py-0.5 rounded-full text-xs border; }
+.pill-ok { @apply border-emerald-400/40 text-emerald-300 bg-emerald-500/10; }
+.pill-warn { @apply border-amber-400/40 text-amber-300 bg-amber-500/10; }
+.pill-bad { @apply border-rose-400/40 text-rose-300 bg-rose-500/10; }
+/* --- tiny extras for banner animation --- */
+@keyframes pulse-soft { 0%,100%{opacity:.4} 50%{opacity:1} }
+.animate-pulse { animation: pulse-soft 1.2s ease-in-out infinite; }

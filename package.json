@@ -1,0 +1,27 @@
+{
+  "name": "credentialing-elite-enterprise",
+  "private": true,
+  "version": "0.6.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.1.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "clsx": "2.1.1",
+    "framer-motion": "11.3.31",
+    "lucide-react": "0.468.0"
+  },
+  "devDependencies": {
+    "typescript": "5.6.3",
+    "@types/react": "18.3.8",
+    "@types/node": "22.7.7",
+    "tailwindcss": "3.4.13",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47"
+  }
+}
